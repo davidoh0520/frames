@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LZN Frames | Classic Browline & Signature Temple Series</title>
+  <meta name="description" content="LZN optical frame catalog: Classic Browline Series and Signature Temple Series." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="LZN Frames home">
+      <img class="brand-logo" src="assets/contact/lzn-logo.png" alt="LZN" />
+      <span><strong>LZN Frames</strong><small>Classic Browline / Signature Temple</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#series-86">Classic Browline</a>
+      <a href="#series-87">Signature Temple</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LZN Eyewear Catalog</p>
+        <h1>Optical Frame<br>Collection</h1>
+        <p>Shop-style product pages for the Classic Browline Series and Signature Temple Series, organized by model, size specification, and color option.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#series-86">View Classic Browline</a>
+          <a class="btn" href="#series-87">View Signature Temple</a>
+        </div>
+      </div>
+      <div class="hero-panel" id="heroPanel"></div>
+    </section>
+
+    <section class="toolbar" aria-label="Product controls">
+      <div>
+        <label for="searchInput">Search Model</label>
+        <input id="searchInput" type="search" placeholder="e.g. 8601, 8713" />
+      </div>
+      <div>
+        <label for="seriesFilter">Series</label>
+        <select id="seriesFilter">
+          <option value="all">All</option>
+          <option value="86">Classic Browline Series</option>
+          <option value="87">Signature Temple Series</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="catalog"></div>
+
+    <section id="contact" class="contact contact-footer">
+      <div class="footer-brand">
+        <img src="assets/contact/lzn-logo.png" alt="LZN" />
+        <p>Professional Optical Frame Collection</p>
+      </div>
+      <div class="contact-info">
+        <div><span>Tel</span><strong>+86 130 6261 9570</strong></div>
+        <div><span>Email</span><strong>sales@lznmed.com</strong></div>
+      </div>
+      <div class="qr-row">
+        <div class="qr-card"><img src="assets/contact/whatsapp-qr.png" alt="WhatsApp QR"><strong>WhatsApp</strong></div>
+        <div class="qr-card"><img src="assets/contact/wechat-qr.png" alt="WeChat QR"><strong>WeChat</strong></div>
+      </div>
+      <p class="copyright">© 2026 LZN MEDICAL CO., LTD. All Rights Reserved.</p>
+    </section>
+    <a class="floating-whatsapp" href="https://wa.me/821063175840" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+      <span class="wa-icon">☎</span>
+      <span>Chat with us on WhatsApp</span>
+    </a>
+    <a class="floating-top" href="#top" aria-label="Back to top">↑</a>
+  </main>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card">
+      <button class="close" type="button" data-close aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </article>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
